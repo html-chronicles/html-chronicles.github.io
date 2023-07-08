@@ -198,3 +198,13 @@
     -webkit-text-fill-color: transparent;
     white-space: nowrap;
   }
+
+footer {
+    color: white;
+    font-family: "Rubik", sans-serif;
+    font-size: clamp(1em, 1vw, 1em);
+    font-weight: 400;
+    margin: 0px;
+    padding: 20px;
+    text-align: center;
+  }
