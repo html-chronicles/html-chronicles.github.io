@@ -95,6 +95,26 @@
     white-space: nowrap;
   }
 
+  @media screen and (max-width: 768px) {
+    h1 {
+      font-size: clamp(3em, 6vw, 5em);
+    }
+    
+    h1 > .magic > .magic-star {
+      --size: clamp(15px, 2vw, 25px);
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    h1 {
+      font-size: clamp(2.5em, 6vw, 4em);
+    }
+    
+    h1 > .magic > .magic-star {
+      --size: clamp(10px, 3vw, 20px);
+    }
+  }
+
   p {
     color: white;
     font-family: "Rubik", sans-serif;
@@ -145,6 +165,28 @@
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     white-space: nowrap;
+  }
+
+  @media screen and (max-width: 768px) {
+    p {
+      font-size: clamp(1.5em, 4vw, 2.5em);
+      padding: 10px;
+    }
+    
+    p > .magic > .magic-star {
+      --size: clamp(15px, 2vw, 25px);
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    p {
+      font-size: clamp(1.2em, 6vw, 2em);
+      padding: 10px;
+    }
+    
+    p > .magic > .magic-star {
+      --size: clamp(10px, 3vw, 20px);
+    }
   }
 
   a {
@@ -199,7 +241,29 @@
     white-space: nowrap;
   }
 
-footer {
+  @media screen and (max-width: 768px) {
+    a {
+      font-size: clamp(2em, 6vw, 4em);
+      padding: 10px;
+    }
+    
+    a > .magic > .magic-star {
+      --size: clamp(15px, 2vw, 25px);
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    a {
+      font-size: clamp(1.5em, 8vw, 3em);
+      padding: 10px;
+    }
+    
+    a > .magic > .magic-star {
+      --size: clamp(10px, 3vw, 20px);
+    }
+  }
+
+  footer {
     color: white;
     font-family: "Rubik", sans-serif;
     font-size: clamp(1em, 1vw, 1em);
@@ -207,4 +271,18 @@ footer {
     margin: 0px;
     padding: 20px;
     text-align: center;
+  }
+
+  @media screen and (max-width: 768px) {
+    footer {
+      font-size: clamp(0.8em, 3vw, 1em);
+      padding: 10px;
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    footer {
+      font-size: clamp(0.7em, 4vw, 0.9em);
+      padding: 10px;
+    }
   }
